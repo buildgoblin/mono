@@ -29,6 +29,7 @@ jar {
 		)
 	}
 }
+jar.baseName = "mono"
 
 task distributionLibs(type: Copy) {
 	from 'lib'
