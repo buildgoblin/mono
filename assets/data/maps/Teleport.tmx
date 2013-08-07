@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="50" height="50" tilewidth="32" tileheight="32" backgroundcolor="#ffffff">
+ <properties>
+  <property name="MAX_VEL_X" value="40"/>
+  <property name="MAX_VEL_Y" value="40"/>
+  <property name="fixedCam" value="true"/>
+  <property name="maxBrightness" value="0.3"/>
+ </properties>
+ <objectgroup color="#550000" name="art" width="50" height="50">
+  <properties>
+   <property name="color" value="8B9595"/>
+  </properties>
+  <object x="32" y="416" width="224" height="1152">
+   <properties>
+    <property name="color" value="FFC955"/>
+   </properties>
+  </object>
+  <object x="0" y="0" width="736" height="416">
+   <properties>
+    <property name="color" value="FFC955"/>
+   </properties>
+  </object>
+  <object x="288" y="416" width="64" height="1184">
+   <properties>
+    <property name="color" value="B8B7B9"/>
+   </properties>
+  </object>
+  <object x="384" y="416" width="96" height="1184">
+   <properties>
+    <property name="color" value="472B44"/>
+   </properties>
+  </object>
+  <object x="1120" y="160" width="480" height="800">
+   <properties>
+    <property name="color" value="B8B7B9"/>
+   </properties>
+  </object>
+  <object x="768" y="32" width="320" height="928">
+   <properties>
+    <property name="color" value="472B44"/>
+   </properties>
+  </object>
+  <object x="768" y="960" width="832" height="384">
+   <properties>
+    <property name="color" value="472B44"/>
+   </properties>
+  </object>
+  <object x="768" y="1344" width="832" height="32">
+   <properties>
+    <property name="color" value="8B9595"/>
+   </properties>
+  </object>
+  <object x="768" y="1376" width="832" height="224">
+   <properties>
+    <property name="color" value="472B44"/>
+   </properties>
+  </object>
+  <object x="512" y="512" width="192" height="1056">
+   <properties>
+    <property name="color" value="B8B7B9"/>
+   </properties>
+  </object>
+  <object x="480" y="1408" width="32" height="192">
+   <properties>
+    <property name="color" value="85424E"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#a4004a" name="evil" width="50" height="50">
+  <object x="0" y="416" width="32" height="1184"/>
+  <object x="704" y="448" width="32" height="128"/>
+  <object x="608" y="416" width="128" height="32"/>
+  <object x="1088" y="736" width="32" height="224"/>
+  <object x="736" y="32" width="32" height="1568"/>
+  <object x="256" y="416" width="32" height="1184"/>
+  <object x="352" y="416" width="32" height="1184"/>
+  <object x="768" y="960" width="832" height="32"/>
+ </objectgroup>
+ <objectgroup color="#f3ff86" name="good" width="50" height="50">
+  <object x="32" y="384" width="224" height="32">
+   <properties>
+    <property name="color" value="BLUE"/>
+    <property name="duration" value="60"/>
+    <property name="rotateable" value=""/>
+    <property name="turnsfor" value="5000"/>
+   </properties>
+  </object>
+  <object x="384" y="416" width="224" height="32">
+   <properties>
+    <property name="color" value="ORANGE"/>
+    <property name="duration" value="1"/>
+    <property name="rotateable" value=""/>
+    <property name="turnsfor" value="90"/>
+   </properties>
+  </object>
+  <object x="352" y="0" width="32" height="416"/>
+  <object x="704" y="576" width="32" height="1024"/>
+  <object x="832" y="32">
+   <polygon points="-64,0 -64,192 64,0"/>
+  </object>
+  <object x="1184" y="160">
+   <properties>
+    <property name="color" value="NONE"/>
+   </properties>
+   <polygon points="-64,0 -64,192 64,0"/>
+  </object>
+  <object x="480" y="416" width="160" height="32"/>
+  <object x="1184" y="768">
+   <properties>
+    <property name="color" value="BLACK"/>
+   </properties>
+   <polygon points="-64,0 -64,192 64,0"/>
+  </object>
+  <object x="1184" y="576">
+   <properties>
+    <property name="color" value="BLACK"/>
+   </properties>
+   <polygon points="-64,0 -64,192 64,0"/>
+  </object>
+  <object x="1184" y="384">
+   <properties>
+    <property name="color" value="BLACK"/>
+   </properties>
+   <polygon points="-64,0 -64,192 64,0"/>
+  </object>
+  <object x="0" y="192" width="736" height="32"/>
+  <object x="480" y="448" width="32" height="960"/>
+  <object x="256" y="384" width="96" height="32"/>
+  <object x="736" y="0" width="384" height="32"/>
+  <object x="1088" y="32" width="32" height="704"/>
+ </objectgroup>
+ <objectgroup color="#ff55ff" name="teleporter" width="50" height="50">
+  <object name="eins" x="160" y="1472" width="96" height="96">
+   <properties>
+    <property name="color" value="468CAE"/>
+    <property name="target" value="zwei"/>
+   </properties>
+  </object>
+  <object name="zwei" x="992" y="32" width="96" height="96">
+   <properties>
+    <property name="color" value="468CAE"/>
+    <property name="target" value="eins"/>
+   </properties>
+  </object>
+  <object name="drei" x="128" y="64" width="64" height="64">
+   <properties>
+    <property name="color" value="ECF9F2"/>
+    <property name="target" value="vier"/>
+   </properties>
+  </object>
+  <object name="vier" x="512" y="64" width="64" height="64">
+   <properties>
+    <property name="color" value="430C19"/>
+    <property name="target" value="fünf"/>
+   </properties>
+  </object>
+  <object name="fünf" x="512" y="256" width="64" height="64">
+   <properties>
+    <property name="color" value="91DF2C"/>
+    <property name="target" value="sechs"/>
+   </properties>
+  </object>
+  <object name="sechs" x="128" y="256" width="64" height="64">
+   <properties>
+    <property name="color" value="F24822"/>
+    <property name="target" value="drei"/>
+   </properties>
+  </object>
+  <object name="final" x="512" y="448" width="192" height="64">
+   <properties>
+    <property name="color" value="BFA98E"/>
+    <property name="target" value="target"/>
+   </properties>
+  </object>
+  <object name="target" x="1120" y="0" width="480" height="160">
+   <properties>
+    <property name="color" value="BFA98E"/>
+    <property name="target" value="target"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#40b6ff" name="acc" width="50" height="50">
+  <object x="32" y="1568" width="224" height="32">
+   <properties>
+    <property name="dir" value="0"/>
+    <property name="speed" value="500"/>
+   </properties>
+  </object>
+  <object x="512" y="1568" width="192" height="32">
+   <properties>
+    <property name="dir" value="0"/>
+    <property name="speed" value="20"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ffaa00" name="trigger" width="50" height="50">
+  <object x="960" y="192" width="128" height="64">
+   <properties>
+    <property name="color" value="BLUE"/>
+   </properties>
+  </object>
+  <object x="704" y="32" width="32" height="160">
+   <properties>
+    <property name="color" value="ORANGE"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#f9f9ff" name="obj" width="50" height="50">
+  <object name="playerstart" x="128" y="1088" width="32" height="32"/>
+  <object name="target" x="1344" y="192" width="32" height="32"/>
+ </objectgroup>
+ <objectgroup name="lights" width="50" height="50">
+  <object x="128" y="928"/>
+  <object x="480" y="1440"/>
+  <object x="1248" y="1152"/>
+  <object x="1344" y="64"/>
+  <object x="928" y="608"/>
+  <object x="1184" y="736"/>
+  <object x="384" y="224"/>
+  <object x="32" y="192"/>
+ </objectgroup>
+ <objectgroup name="texts" width="50" height="50">
+  <object x="800" y="1024" width="768" height="288">
+   <properties>
+    <property name="text" value="Think you're escaping and run into yourself. Longest way round is the shortest way home."/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

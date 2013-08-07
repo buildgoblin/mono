@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="100" height="101" tilewidth="32" tileheight="32" backgroundcolor="#ffffff">
+ <properties>
+  <property name="MAX_VEL_X" value="20"/>
+  <property name="MAX_VEL_Y" value="50"/>
+  <property name="fixedCam" value="false"/>
+  <property name="maxBrightness" value="0"/>
+ </properties>
+ <objectgroup color="#550000" name="art" width="100" height="101" visible="0">
+  <properties>
+   <property name="color" value="8B9595"/>
+  </properties>
+  <object x="0" y="512" width="3200" height="512">
+   <properties>
+    <property name="color" value="B77A09"/>
+   </properties>
+  </object>
+  <object x="1312" y="2400" width="704" height="640">
+   <properties>
+    <property name="color" value="480202"/>
+   </properties>
+  </object>
+  <object x="1344" y="1216" width="736" height="544">
+   <properties>
+    <property name="color" value="2B3F48"/>
+   </properties>
+  </object>
+  <object x="2080" y="1024" width="192" height="928">
+   <properties>
+    <property name="color" value="0E293A"/>
+   </properties>
+  </object>
+  <object x="1152" y="1024" width="160" height="928">
+   <properties>
+    <property name="color" value="0E293A"/>
+   </properties>
+  </object>
+  <object x="1312" y="1792" width="768" height="160">
+   <properties>
+    <property name="color" value="0E293A"/>
+   </properties>
+  </object>
+  <object x="1312" y="1024" width="768" height="160">
+   <properties>
+    <property name="color" value="0E293A"/>
+   </properties>
+  </object>
+  <object x="2272" y="1472" width="864" height="160">
+   <properties>
+    <property name="color" value="0E293A"/>
+   </properties>
+  </object>
+  <object x="480" y="2400" width="832" height="640">
+   <properties>
+    <property name="color" value="480202"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ff5500" name="teleporter" width="100" height="101">
+  <object name="one" x="128" y="864" width="64" height="64">
+   <properties>
+    <property name="color" value="000000"/>
+    <property name="target" value="final"/>
+   </properties>
+  </object>
+  <object name="two" x="1952" y="2528" width="64" height="64">
+   <properties>
+    <property name="color" value="5BC8CF"/>
+    <property name="target" value="one"/>
+   </properties>
+  </object>
+  <object name="three" x="3072" y="1472" width="64" height="64">
+   <properties>
+    <property name="color" value="5BC8CF"/>
+    <property name="target" value="two"/>
+   </properties>
+  </object>
+  <object name="restart" x="128" y="1280" width="64" height="64">
+   <properties>
+    <property name="color" value="5BC8CF"/>
+    <property name="target" value="spawn"/>
+   </properties>
+  </object>
+  <object name="spawn" x="1344" y="1696" width="64" height="64">
+   <properties>
+    <property name="color" value="5BC8CF"/>
+    <property name="target" value="restart"/>
+   </properties>
+  </object>
+  <object name="shortcut" x="608" y="1280" width="64" height="64">
+   <properties>
+    <property name="color" value="5BC8CF"/>
+    <property name="target" value="two"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#f9f9ff" name="obj" width="100" height="101">
+  <object name="playerstart" x="1824" y="1408" width="32" height="32"/>
+  <object name="target" x="2116" y="3114" width="32" height="32">
+   <properties>
+    <property name="target" value=""/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#00ff00" name="texts" width="100" height="101" visible="0">
+  <properties>
+   <property name="text" value="Be fearless and touch these blue walls."/>
+  </properties>
+  <object x="1472" y="1312" width="512" height="320">
+   <properties>
+    <property name="text" value="In nature, light creates the color.BREAKIn the picture, color creates the light."/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#a4004a" name="evil" width="100" height="101">
+  <object x="0" y="928" width="3200" height="32"/>
+  <object x="1152" y="1952" width="1120" height="32"/>
+  <object x="0" y="608" width="3200" height="32"/>
+  <object x="0" y="2240" width="3200" height="32"/>
+  <object x="192" y="736" width="32" height="96"/>
+  <object x="192" y="960" width="32" height="96"/>
+  <object x="1152" y="992" width="1120" height="32"/>
+  <object x="1120" y="992" width="32" height="992"/>
+  <object x="2272" y="992" width="32" height="480"/>
+  <object x="2272" y="1632" width="32" height="352"/>
+  <object x="2304" y="1440" width="736" height="32"/>
+  <object x="2304" y="1632" width="832" height="32"/>
+  <object x="1376" y="2368" width="96" height="32"/>
+ </objectgroup>
+ <objectgroup color="#f3ff86" name="good" width="100" height="101">
+  <object x="384" y="1312" width="32" height="192">
+   <properties>
+    <property name="color" value="ORANGE"/>
+    <property name="duration" value="1"/>
+    <property name="rotateable" value=""/>
+    <property name="turnsfor" value="90"/>
+   </properties>
+  </object>
+  <object x="736" y="896" width="32" height="64"/>
+  <object x="3008" y="960" width="192" height="32"/>
+  <object x="1440" y="1280" width="544" height="32"/>
+  <object x="1472" y="1664" width="544" height="32"/>
+  <object x="1984" y="1280" width="32" height="384"/>
+  <object x="1408" y="1280" width="32" height="288"/>
+  <object x="1312" y="1760" width="800" height="32"/>
+  <object x="1312" y="1184" width="800" height="32"/>
+  <object x="2080" y="1280" width="32" height="480"/>
+  <object x="1312" y="1216" width="32" height="544"/>
+  <object x="1824" y="2592" width="192" height="32"/>
+  <object x="1472" y="2496" width="544" height="32"/>
+  <object x="1280" y="2496" width="32" height="544"/>
+  <object x="1792" y="2592" width="32" height="256"/>
+  <object x="1696" y="2528" width="32" height="192"/>
+  <object x="1600" y="2720" width="128" height="32"/>
+  <object x="1600" y="2752" width="32" height="192"/>
+  <object x="1376" y="2720" width="224" height="32"/>
+  <object x="1600" y="2528" width="32" height="192"/>
+  <object x="448" y="2240" width="32" height="704"/>
+  <object x="416" y="3040" width="896" height="32"/>
+  <object x="1408" y="2912" width="384" height="32"/>
+  <object x="480" y="2368" width="896" height="32"/>
+  <object x="2016" y="2400" width="32" height="672"/>
+  <object x="-192" y="2944" width="1088" height="32"/>
+  <object x="3040" y="1472" width="32" height="96"/>
+  <object x="3040" y="1440" width="96" height="32"/>
+  <object x="3136" y="1440" width="32" height="224"/>
+  <object x="1024" y="2496" width="256" height="32"/>
+  <object x="1376" y="3040" width="512" height="32"/>
+  <object x="1472" y="2368" width="576" height="32"/>
+  <object x="96" y="1536" width="608" height="32"/>
+  <object x="128" y="1248" width="576" height="32"/>
+  <object x="96" y="1248" width="32" height="288"/>
+  <object x="672" y="1280" width="32" height="256"/>
+  <object x="384" y="1280" width="32" height="32"/>
+  <object x="384" y="1504" width="32" height="32"/>
+  <object x="256" y="2976" width="32" height="224"/>
+  <object x="256" y="3200" width="1984" height="32"/>
+  <object x="2208" y="2272" width="32" height="928"/>
+  <object x="1312" y="3072" width="736" height="32"/>
+ </objectgroup>
+ <objectgroup color="#40b6ff" name="acc" width="100" height="101">
+  <object x="768" y="896" width="32" height="64">
+   <properties>
+    <property name="dir" value="-90"/>
+    <property name="speed" value="50"/>
+   </properties>
+  </object>
+  <object x="1312" y="3040" width="64" height="32">
+   <properties>
+    <property name="dir" value="0"/>
+    <property name="speed" value="20"/>
+   </properties>
+  </object>
+  <object x="1888" y="3040" width="128" height="32">
+   <properties>
+    <property name="dir" value="0"/>
+    <property name="speed" value="50"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ffaa00" name="trigger" width="100" height="101">
+  <object x="1632" y="2848" width="32" height="64">
+   <properties>
+    <property name="color" value="ORANGE"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="lights" width="100" height="101">
+  <object x="1504" y="1344"/>
+  <object x="1952" y="1568"/>
+  <object x="3104" y="1504"/>
+  <object x="1472" y="2848"/>
+ </objectgroup>
+ <objectgroup name="gravity" width="100" height="101" visible="0">
+  <properties>
+   <property name="x" value=""/>
+   <property name="y" value=""/>
+  </properties>
+  <object x="1312" y="2496" width="736" height="576">
+   <properties>
+    <property name="x" value="0"/>
+    <property name="y" value="-30"/>
+   </properties>
+  </object>
+  <object x="480" y="2400" width="832" height="640">
+   <properties>
+    <property name="x" value="0"/>
+    <property name="y" value="15"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

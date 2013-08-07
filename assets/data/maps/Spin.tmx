@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="100" height="100" tilewidth="32" tileheight="32" backgroundcolor="#ffffff">
+ <properties>
+  <property name="MAX_VEL_X" value="20"/>
+  <property name="MAX_VEL_Y" value="20"/>
+  <property name="fixedCam" value="false"/>
+ </properties>
+ <objectgroup color="#550000" name="art" width="100" height="100">
+  <properties>
+   <property name="color" value="8B9595"/>
+  </properties>
+  <object x="0" y="0" width="1600" height="736">
+   <properties>
+    <property name="color" value="FF2F91"/>
+   </properties>
+  </object>
+  <object x="0" y="736" width="1344" height="992">
+   <properties>
+    <property name="color" value="FF83BF"/>
+   </properties>
+  </object>
+  <object x="0" y="1728" width="1344" height="960">
+   <properties>
+    <property name="color" value="6E0A3C"/>
+   </properties>
+  </object>
+  <object x="1632" y="0" width="416" height="736">
+   <properties>
+    <property name="color" value="FFFFFF"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#f9f9ff" name="obj" width="100" height="100">
+  <object name="playerstart" x="608" y="2592" width="32" height="32"/>
+  <object name="target" x="1984" y="256"/>
+ </objectgroup>
+ <objectgroup color="#00ff00" name="texts" width="100" height="100">
+  <properties>
+   <property name="text" value="Be fearless and touch these blue walls."/>
+  </properties>
+  <object x="256" y="1824" width="832" height="256">
+   <properties>
+    <property name="text" value="This game was created within 48 hours for the ludum dare competition 26."/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#a4004a" name="evil" width="100" height="100"/>
+ <objectgroup color="#f3ff86" name="good" width="100" height="100">
+  <object x="320" y="384" width="32" height="96">
+   <properties>
+    <property name="color" value="BLACK"/>
+    <property name="duration" value="4"/>
+    <property name="rotateable" value=""/>
+    <property name="turnsfor" value="270"/>
+   </properties>
+  </object>
+  <object x="256" y="224" width="32" height="224">
+   <properties>
+    <property name="color" value="BLACK"/>
+    <property name="duration" value="6"/>
+    <property name="rotateable" value=""/>
+    <property name="turnsfor" value="360"/>
+   </properties>
+  </object>
+  <object x="480" y="384" width="32" height="96">
+   <properties>
+    <property name="color" value="BLACK"/>
+    <property name="duration" value="2"/>
+    <property name="rotateable" value=""/>
+    <property name="turnsfor" value="90"/>
+   </properties>
+  </object>
+  <object x="320" y="320" width="224" height="32">
+   <properties>
+    <property name="color" value="BLACK"/>
+    <property name="duration" value="2"/>
+    <property name="rotateable" value=""/>
+    <property name="turnsfor" value="90"/>
+   </properties>
+  </object>
+  <object x="480" y="192" width="32" height="96">
+   <properties>
+    <property name="color" value="BLACK"/>
+    <property name="duration" value="5"/>
+    <property name="rotateable" value=""/>
+    <property name="turnsfor" value="-270"/>
+   </properties>
+  </object>
+  <object x="544" y="256" width="32" height="160">
+   <properties>
+    <property name="color" value="BLACK"/>
+    <property name="duration" value="2"/>
+    <property name="rotateable" value=""/>
+    <property name="turnsfor" value="0"/>
+   </properties>
+  </object>
+  <object x="928" y="320" width="32" height="32">
+   <properties>
+    <property name="color" value="BLACK"/>
+    <property name="duration" value="2"/>
+    <property name="rotateable" value=""/>
+    <property name="turnsfor" value="360"/>
+   </properties>
+  </object>
+  <object x="896" y="352" width="32" height="64">
+   <properties>
+    <property name="color" value="BLACK"/>
+    <property name="duration" value="2"/>
+    <property name="rotateable" value=""/>
+    <property name="turnsfor" value="0"/>
+   </properties>
+  </object>
+  <object x="896" y="224" width="64" height="32">
+   <properties>
+    <property name="color" value="BLACK"/>
+    <property name="duration" value="2"/>
+    <property name="rotateable" value=""/>
+    <property name="turnsfor" value="0"/>
+   </properties>
+  </object>
+  <object x="960" y="256" width="32" height="64">
+   <properties>
+    <property name="color" value="BLACK"/>
+    <property name="duration" value="2"/>
+    <property name="rotateable" value=""/>
+    <property name="turnsfor" value="360"/>
+   </properties>
+  </object>
+  <object x="928" y="384" width="32" height="96">
+   <properties>
+    <property name="color" value="BLACK"/>
+    <property name="duration" value="2"/>
+    <property name="rotateable" value=""/>
+    <property name="turnsfor" value="-90"/>
+   </properties>
+  </object>
+  <object x="1088" y="192" width="32" height="96">
+   <properties>
+    <property name="color" value="BLACK"/>
+    <property name="duration" value="2"/>
+    <property name="rotateable" value=""/>
+    <property name="turnsfor" value="90"/>
+   </properties>
+  </object>
+  <object x="1024" y="352" width="96" height="32">
+   <properties>
+    <property name="color" value="BLACK"/>
+    <property name="duration" value="3"/>
+    <property name="rotateable" value=""/>
+    <property name="turnsfor" value="270"/>
+   </properties>
+  </object>
+  <object x="1088" y="320" width="32" height="32">
+   <properties>
+    <property name="color" value="BLACK"/>
+    <property name="duration" value="2"/>
+    <property name="rotateable" value=""/>
+    <property name="turnsfor" value="0"/>
+   </properties>
+  </object>
+  <object x="1088" y="384" width="32" height="96">
+   <properties>
+    <property name="color" value="BLACK"/>
+    <property name="duration" value="2"/>
+    <property name="rotateable" value=""/>
+    <property name="turnsfor" value="90"/>
+   </properties>
+  </object>
+  <object x="1120" y="352" width="32" height="64">
+   <properties>
+    <property name="color" value="BLACK"/>
+    <property name="duration" value="2"/>
+    <property name="rotateable" value=""/>
+    <property name="turnsfor" value="0"/>
+   </properties>
+  </object>
+  <object x="1088" y="288" width="96" height="32">
+   <properties>
+    <property name="color" value="BLACK"/>
+    <property name="duration" value="4"/>
+    <property name="rotateable" value=""/>
+    <property name="turnsfor" value="90"/>
+   </properties>
+  </object>
+  <object x="768" y="224" width="32" height="224">
+   <properties>
+    <property name="color" value="BLACK"/>
+    <property name="duration" value="2"/>
+    <property name="rotateable" value=""/>
+    <property name="turnsfor" value="0"/>
+   </properties>
+  </object>
+  <object x="576" y="320" width="224" height="32">
+   <properties>
+    <property name="color" value="BLACK"/>
+    <property name="duration" value="2"/>
+    <property name="rotateable" value=""/>
+    <property name="turnsfor" value="90"/>
+   </properties>
+  </object>
+  <object x="640" y="352" width="192" height="32">
+   <properties>
+    <property name="color" value="BLACK"/>
+    <property name="duration" value="2"/>
+    <property name="rotateable" value=""/>
+    <property name="turnsfor" value="0"/>
+   </properties>
+  </object>
+  <object x="640" y="288" width="192" height="32">
+   <properties>
+    <property name="color" value="BLACK"/>
+    <property name="duration" value="2"/>
+    <property name="rotateable" value=""/>
+    <property name="turnsfor" value="0"/>
+   </properties>
+  </object>
+  <object x="0" y="736" width="544" height="32"/>
+  <object x="800" y="736" width="800" height="32"/>
+  <object x="1600" y="192" width="32" height="320">
+   <properties>
+    <property name="color" value="BLACK"/>
+    <property name="duration" value="20"/>
+    <property name="rotateable" value=""/>
+    <property name="turnsfor" value="720"/>
+   </properties>
+  </object>
+  <object x="1600" y="0" width="32" height="192"/>
+  <object x="1600" y="512" width="32" height="256"/>
+  <object x="1344" y="768" width="32" height="928"/>
+  <object x="0" y="1696" width="544" height="32"/>
+  <object x="800" y="1696" width="576" height="32"/>
+  <object x="2048" y="-32" width="32" height="768"/>
+  <object x="1632" y="736" width="448" height="32"/>
+  <object x="1344" y="1728" width="32" height="960"/>
+  <object x="0" y="2688" width="1376" height="32"/>
+  <object x="1184" y="1920" width="32" height="512"/>
+  <object x="128" y="1920" width="32" height="512"/>
+ </objectgroup>
+ <objectgroup color="#40b6ff" name="acc" width="100" height="100"/>
+ <objectgroup color="#ffaa00" name="trigger" width="100" height="100">
+  <properties>
+   <property name="color" value="BLACK"/>
+  </properties>
+  <object name="trigger" x="160" y="416" width="64" height="64">
+   <properties>
+    <property name="color" value="BLACK"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="lights" width="100" height="100">
+  <object x="1280" y="2176"/>
+  <object x="64" y="2176"/>
+  <object x="640" y="1792"/>
+  <object x="640" y="1600"/>
+  <object x="1248" y="864"/>
+  <object x="96" y="864"/>
+  <object x="1472" y="640"/>
+  <object x="1504" y="64"/>
+  <object x="1856" y="160"/>
+  <object x="1824" y="288"/>
+  <object x="1888" y="480"/>
+ </objectgroup>
+ <objectgroup name="teleporter" width="100" height="100"/>
+</map>

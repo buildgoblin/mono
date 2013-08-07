@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="100" height="100" tilewidth="32" tileheight="32" backgroundcolor="#ffffff">
+ <properties>
+  <property name="MAX_VEL_X" value="70"/>
+  <property name="MAX_VEL_Y" value="70"/>
+  <property name="fixedCam" value="false"/>
+ </properties>
+ <objectgroup color="#550000" name="art" width="100" height="100">
+  <properties>
+   <property name="color" value="8B9595"/>
+  </properties>
+  <object x="0" y="640" width="3200" height="512">
+   <properties>
+    <property name="color" value="B77A09"/>
+   </properties>
+  </object>
+  <object x="0" y="1696" width="3200" height="544">
+   <properties>
+    <property name="color" value="480202"/>
+   </properties>
+  </object>
+  <object x="0" y="1152" width="3200" height="544">
+   <properties>
+    <property name="color" value="C44000"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="teleporter" width="100" height="100">
+  <object name="one" x="128" y="864" width="64" height="64">
+   <properties>
+    <property name="color" value="000000"/>
+    <property name="target" value="final"/>
+   </properties>
+  </object>
+  <object name="two" x="544" y="1408" width="64" height="64">
+   <properties>
+    <property name="color" value="000000"/>
+    <property name="target" value="one"/>
+   </properties>
+  </object>
+  <object name="three" x="640" y="1408" width="64" height="64">
+   <properties>
+    <property name="color" value="000000"/>
+    <property name="target" value="two"/>
+   </properties>
+  </object>
+  <object name="final" x="800" y="896" width="64" height="64">
+   <properties>
+    <property name="color" value="000000"/>
+    <property name="target" value="one"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#f9f9ff" name="obj" width="100" height="100">
+  <object name="playerstart" x="1665" y="1411" width="32" height="32"/>
+  <object name="target" x="3136" y="864" width="64" height="64">
+   <properties>
+    <property name="target" value=""/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#00ff00" name="texts" width="100" height="100">
+  <properties>
+   <property name="text" value="Be fearless and touch these blue walls."/>
+  </properties>
+  <object x="1120" y="1312" width="1152" height="96">
+   <properties>
+    <property name="text" value="There is more to life than increasing its speed."/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#a4004a" name="evil" width="100" height="100">
+  <object x="0" y="1120" width="3200" height="32"/>
+  <object x="0" y="1696" width="3200" height="32"/>
+  <object x="0" y="608" width="3200" height="32"/>
+  <object x="0" y="2240" width="3200" height="32"/>
+  <object x="608" y="1152" width="32" height="544">
+   <properties>
+    <property name="color" value="BLACK"/>
+    <property name="duration" value="2"/>
+    <property name="rotateable" value=""/>
+    <property name="turnsfor" value="90"/>
+   </properties>
+  </object>
+  <object x="192" y="736" width="32" height="96"/>
+  <object x="192" y="960" width="32" height="96"/>
+ </objectgroup>
+ <objectgroup color="#f3ff86" name="good" width="100" height="100">
+  <object x="3008" y="640" width="32" height="320">
+   <properties>
+    <property name="color" value="ORANGE"/>
+    <property name="duration" value="4"/>
+    <property name="rotateable" value=""/>
+    <property name="turnsfor" value="360"/>
+   </properties>
+  </object>
+  <object x="736" y="896" width="32" height="64"/>
+  <object x="3008" y="960" width="192" height="32"/>
+ </objectgroup>
+ <objectgroup color="#40b6ff" name="acc" width="100" height="100">
+  <object x="768" y="896" width="32" height="64">
+   <properties>
+    <property name="dir" value="-90"/>
+    <property name="speed" value="50"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ffaa00" name="trigger" width="100" height="100">
+  <object x="224" y="832" width="128" height="32">
+   <properties>
+    <property name="color" value="ORANGE"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="lights" width="100" height="100">
+  <object x="1696" y="1344"/>
+  <object x="288" y="896"/>
+  <object x="896" y="928"/>
+  <object x="1888" y="896"/>
+  <object x="256" y="1440"/>
+ </objectgroup>
+</map>

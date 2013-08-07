@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="35" height="30" tilewidth="32" tileheight="32" backgroundcolor="#ffffff">
+ <properties>
+  <property name="MAX_VEL_X" value="20"/>
+  <property name="MAX_VEL_Y" value="20"/>
+  <property name="fixedCam" value="true"/>
+  <property name="maxBrightness" value="0.3"/>
+ </properties>
+ <objectgroup color="#550000" name="art" width="35" height="30">
+  <properties>
+   <property name="color" value="8B9595"/>
+  </properties>
+  <object x="0" y="32" width="736" height="384">
+   <properties>
+    <property name="color" value="54778C"/>
+   </properties>
+  </object>
+  <object x="768" y="32" width="320" height="896">
+   <properties>
+    <property name="color" value="430C19"/>
+   </properties>
+  </object>
+  <object x="32" y="448" width="736" height="512">
+   <properties>
+    <property name="color" value="8B9595"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#a4004a" name="evil" width="35" height="30">
+  <object x="736" y="0" width="384" height="32"/>
+  <object x="0" y="416" width="288" height="32"/>
+  <object x="704" y="448" width="32" height="128"/>
+  <object x="480" y="416" width="256" height="32"/>
+  <object x="0" y="448" width="32" height="512"/>
+  <object x="1088" y="736" width="32" height="224"/>
+  <object x="736" y="32" width="32" height="832"/>
+  <object x="1088" y="32" width="32" height="704"/>
+ </objectgroup>
+ <objectgroup color="#f3ff86" name="good" width="35" height="30">
+  <object x="256" y="448" width="32" height="224"/>
+  <object x="256" y="672" width="32" height="288">
+   <properties>
+    <property name="color" value="BLACK"/>
+    <property name="duration" value="2"/>
+    <property name="rotateable" value=""/>
+    <property name="turnsfor" value="-180"/>
+   </properties>
+  </object>
+  <object x="480" y="448" width="32" height="256">
+   <properties>
+    <property name="duration" value="2"/>
+    <property name="rotateable" value=""/>
+    <property name="turnsfor" value="180"/>
+   </properties>
+  </object>
+  <object x="288" y="416" width="192" height="32"/>
+  <object x="480" y="704" width="32" height="256"/>
+  <object x="704" y="576" width="32" height="288"/>
+  <object x="832" y="32">
+   <polygon points="-64,0 -64,192 64,0"/>
+  </object>
+  <object x="64" y="32">
+   <polygon points="-64,0 -64,192 64,0"/>
+  </object>
+ </objectgroup>
+ <objectgroup color="#40b6ff" name="acc" width="35" height="30">
+  <object x="704" y="928" width="384" height="32">
+   <properties>
+    <property name="dir" value="0"/>
+    <property name="speed" value="75"/>
+   </properties>
+  </object>
+  <object x="32" y="864" width="32" height="96">
+   <properties>
+    <property name="dir" value="-90"/>
+    <property name="speed" value="20"/>
+   </properties>
+  </object>
+  <object x="288" y="448" width="32" height="224">
+   <properties>
+    <property name="dir" value="-90"/>
+    <property name="speed" value="30"/>
+   </properties>
+  </object>
+  <object x="224" y="448" width="32" height="224">
+   <properties>
+    <property name="dir" value="110"/>
+    <property name="speed" value="20"/>
+   </properties>
+  </object>
+  <object x="32" y="448" width="32" height="224">
+   <properties>
+    <property name="dir" value="-120"/>
+    <property name="speed" value="20"/>
+   </properties>
+  </object>
+  <object x="0" y="0" width="736" height="32"/>
+ </objectgroup>
+ <objectgroup color="#ffaa00" name="trigger" width="35" height="30">
+  <object x="64" y="448" width="160" height="32">
+   <properties>
+    <property name="color" value="BLACK"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#f9f9ff" name="obj" width="35" height="30">
+  <object name="playerstart" x="128" y="640" width="32" height="32"/>
+  <object name="target" x="928" y="64" width="32" height="32"/>
+ </objectgroup>
+ <objectgroup name="lights" width="35" height="30">
+  <object x="352" y="224"/>
+  <object x="928" y="768"/>
+  <object x="928" y="256"/>
+ </objectgroup>
+ <objectgroup name="texts" width="35" height="30">
+  <object x="192" y="160" width="320" height="96">
+   <properties>
+    <property name="text" value="Who's there?"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
