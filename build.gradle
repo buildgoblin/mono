@@ -1,3 +1,5 @@
+defaultTasks 'clean', 'zip', 'windowsZip'
+
 apply plugin: 'java'
 
 sourceSets {
