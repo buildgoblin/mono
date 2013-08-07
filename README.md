@@ -10,3 +10,5 @@ Windows Builds
 ==============
 
 To get "native" windows builds working, you'll need to uncompress this archive a directory above the directory MONO is in.
+
+http://static.harmonicarobot.com/files/java-dist-windows.zip
