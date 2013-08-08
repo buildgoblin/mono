@@ -40,6 +40,7 @@ task distribution(type: Copy) {
 	from 'assets'
 	from 'build/libs/mono.jar'
 	into 'dist/generic/'
+	rename 'mono.jar', 'run.jar'
 }
 distribution.dependsOn(jar)
 distribution.dependsOn(distributionLibs)
@@ -53,7 +54,6 @@ task windows(type: Copy) {
 	from 'dist/generic'
 	from '../java-dist-windows'
 	into 'dist/windows'
-	rename 'mono.jar', 'run.jar'
 }
 windows.dependsOn(distribution)
 
